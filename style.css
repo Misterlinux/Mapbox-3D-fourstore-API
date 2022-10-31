@@ -1,0 +1,149 @@
+
+.demo-wrap {
+    overflow: hidden;
+    position: relative;
+    height: 450px;
+
+    margin-bottom: 2em;
+}
+  
+.demo-bg {
+  opacity: 0.55;
+  position: absolute;
+  width: 100%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  filter: sepia(100%);
+  -webkit-filter: sepia(100%);
+
+  z-index: -3;
+}
+/*we can apply filters to the image using css */
+
+.demo-content {
+    padding: 6.5em 1em 2em 1em;
+    text-align: center;
+
+    color: white;
+}
+
+.demo-content h1{
+    font-size: 4.5rem;
+}
+
+#map{
+    display: block;
+    width: 100%; 
+    height: 500px;
+}
+
+/*icon on locations*/
+.small{
+    width: 45px;
+    height: 45px;
+}
+
+/*visible location list on search button*/
+#vedere{
+    display: none;
+}
+/*maybe we can make then the same */
+#vedere1{
+    display: none;
+}
+
+#four{
+    background-color: #a66f54;
+    padding: 0.1em 0.2em;
+    border-radius: 10%;
+}
+
+/*We use the webkit on the same class we got the scroll*/
+.scroll{
+    position: relative;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar{
+    height: 1px;
+    width: 3px;
+}
+
+.scroll::-webkit-scrollbar-thumb{
+    background: #bc937f;
+    border-radius: 15%
+}
+
+.scroll1{
+    position: relative;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.scroll1::-webkit-scrollbar{
+    height: 1px;
+    width: 3px;
+}
+
+.scroll1::-webkit-scrollbar-thumb{
+    background: #bc937f;
+    border-radius: 15%
+}
+
+.select:hover{
+    background-color: #d2b7a9;
+    color: white;
+    cursor: pointer;
+}
+
+.active{
+    background-color: #a66f54;
+    color: white;
+}
+
+.active:hover{
+    background-color: #bc937f;
+}
+
+/*------------ ---------------*/
+
+.footer {
+    background-color: #1c0f08;
+    color: #d2b7a9;
+    font-size: 65%;
+    bottom: 0;
+    position: fixed;
+}
+
+.footer a{
+    color: #d2b7a9;
+}
+
+.footer a:hover{
+    color: #e8dbd4;
+}
+
+@media only screen and (max-width: 600px){
+
+    .demo-wrap {
+        height: 250px;
+    }
+
+    .demo-content h1{
+        font-size: 2rem;
+    }
+
+    .demo-content {
+        padding: 2em 0.5em 1em 0.5em;
+    }
+
+    #map{
+        height: 400px;
+    }
+    
+
+}

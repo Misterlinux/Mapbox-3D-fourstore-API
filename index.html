@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/331132e12f.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="demo-wrap">
+
+        <img class="demo-bg" src="https://live.staticflickr.com/3789/12189644723_2e21e54ed2_z.jpg">
+
+        <div class="demo-content">
+            <h1 class="mb-4">Find our top 3D places in your City</h1>
+            <h6 class="mb-3">Pick a city and check our favorite 10 places to visit, in 3D
+                <i class="fa-solid fa-cube"></i>
+            </h6>
+
+            <div class="align-items-center d-flex justify-content-center ">
+                <input type="text " id="posto">
+                <a href="#mapi">
+                    <button class="ms-1 btn text-white px-2" id="four">check</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container mb-5" id="mapi">
+        <div class="row mb-5">
+
+            <div class="col-sm-3 p-0" id="vedere">
+
+                <div class="container-fluid scroll pe-3">
+                    <div class="row">
+                        <div class="col-sm-12" id="listing">
+            
+            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-12" id="mappa">
+
+                <div id="map"></div>
+
+            </div>
+
+            <div class="col-sm-3 diss p-0" id="vedere1">
+                <div class="container-fluid scroll1 pe-3">
+                    <div class="row">
+                        <div class="col-sm-12" id="listing1">
+            
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="footer text-center p-1 w-100 mt-2">
+        <div class="pure-u-1">
+            Application made with 
+            <a href="https://www.mapbox.com/mapbox-gljs">MapboxGL.js</a>
+            by 
+            <a href="https://github.com/Misterlinux?tab=repositories">Angelo Zarate</a>
+            , check more at his 
+            <a href="https://codepen.io/your-work">codepen</a>
+        </div>
+    </div>
+
+
+<!--we are gonna try the button with the animates left to right thing-->
+    
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+    <script src="./script.js"></script>
+
+    <script src="./turf.min.js" charset="utf-8"></script>
+</body>
+</html>
