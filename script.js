@@ -89,6 +89,7 @@ let gravita= [];
 const APIKEY = "1313cd4c0f364f82aa120509835e4786";
 let URL = `https://api.weatherbit.io/v2.0/current?key=${APIKEY}`;
 
+let distanze= []
 fourstore.addEventListener("click", async ()=>{
 
   if( centro.length !== 0 ){
@@ -240,6 +241,7 @@ mappa.getBoundingClientRect().width< 600 ?
   let features = turf.points( centro )
   let centrato = turf.center( features )
 
+  distanze= []
   //zoom level function
   zoomato= lontano( posti, turf.center( turf.points(centro) ) )
 
@@ -247,8 +249,6 @@ mappa.getBoundingClientRect().width< 600 ?
   placing( centrato.geometry.coordinates[0], centrato.geometry.coordinates[1], centro, zoomato )
 
 })
-
-let distanze= []
 
 function lontano(lista, apice){
 
